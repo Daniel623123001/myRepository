@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style media="screen">
+    .Container{
+      display: none;
+      position: relative;
+      margin: 25px auto;
+      background-color:lightgreen;
+      width: 70%;
+      height: 400px;
+    }
+    .messageToEnter{
+      box-sizing: border-box;
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      border: 2px solid red;
+    }
+    .messageToEnter input{
+      height: 30px;
+      width: 80%;
+      text-align: center;
+      font-size: 1.5em;
+    }
+    .messageToEnter button{
+      float: right;
+      width: 19.5%;
+      height: 35px;
+    }
+    .message{
+      margin-top: 15px;
+      color: white;
+      font-size: 26px;
+    }
+    .messageDisplay{
+      width: 100%;
+      height: 89.5%;
+      overflow-y: scroll;
+      border: 2px solid purple;
+    }
+    @media (min-width:480px) and (max-width:1280px) {
+      .messageToEnter button{
+        float: right;
+        width: 18.5%;
+        height: 35px;
+      }
+      .messageToEnter{
+        border: none;
+      }
+      .form{
+        position: relative;
+        background-color: red;
+        width: 30%;
+        height: 400px;
+        margin: 0 auto;
+      }
+    }
+    .form{
+      position: relative;
+      background-color: grey;
+      width: 30%;
+      height: 185px;
+      margin: 0 auto;
+    }
+    .form input{
+      width: 70%;
+    }
+    .form label{
+      font-size: 20px;
+    }
+    .submit button{
+      display: inline;
+      margin: 15px 0;
+      font-size: 25px;
+    }
+    .submit button:nth-child(2){
+      float: right;
+    }
+    .login_form_Title{
+      display: flex;
+    }
+    .login_form_Title label{
+      margin: 10px auto;
+    }
+    body{
+      background-color: rgba(0, 100, 100, 0.8);
+    }
+    .username{
+      display: flex;
+      justify-content: space-around;
+    }
+    .password{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40px;
+    }
+  </style>
+  <body>
+    <form class="form" action="index.html" method="post">
+      <div class="login_form_Title">
+        <label for="">Login Form</label>
+      </div>
+        <div class="username">
+          <label for="">Username:</label>
+          <input id="username" type="text" name="" value="">
+        </div>
+        <div class="password">
+          <label for="">Password:</label>
+          <input id="password" type="password" name="" value="">
+        </div>
+      <div class="submit">
+        <button id="submit"  type="button" name="button">Login In</button>
+        <button id="signOut" type="button" name="button">Sign Out</button>
+      </div>
+    </form>
+      <div class="Container">
+        <div class="messageDisplay">
+        </div>
+      <div class="messageToEnter">
+        <input id="chatBoxInput" type="text" name="" value="" placeholder="Start Chating Here">
+        <button id="send" type="button" name="button">Send</button>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="C:\Users\Daniel Williams\Desktop\jQUERY\jquery-3.4.1.min.js">
+
+  </script>
+  <script type="text/javascript" src="ChatBox.js" >
+
+  </script>
+</html>
